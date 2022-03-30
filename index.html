@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site do Cauan</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header id="cabecalho">
+    <a id="logo" href="./index-main.html">Site do Cauan</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./projetos.html">Projetos</a></li>
+        <li><a href="https://www.linkedin.com/in/francisco-cauan-victor-78523b227/">LinkedIn</a></li>
+        <li><a href="https://github.com/CauanDZN">GitHub</a></li>
+        <li><a href="https://beacons.ai/cauanvictor">Fale Comigo</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="inicio">
+        <div class="inicio-info">
+        <h1 style="text-align: center;">Olá, meu nome é Cauan!</h1>
+        <p>
+            Tenho 16 anos e esse é meu primeiro protótipo, digamos assim, de um site.
+        </p>
+        <p>
+            Sempre quis elaborar um site e esse é o meu site, que fiz do zero, utilizando HTML5 + CSS3 + JS e estou melhorando ele a cada dia.
+        </p>
+        <p>
+            Toda vez que aprendo uma coisa nova, eu testo e adiciono no meu site. <br> Estou aberto à críticas!
+        </p>
+        </div>
+    </div>
+
+    <div class="sobre">
+        <h1>Minha história</h1>
+        <p>Nasci e cresci em Fortaleza. Durante toda minha trajetória, percebia o quanto eu amava e até hoje amo a <strong>tecnologia</strong>.</p>
+
+        <div class="foto1" data-aos="fade-right;" data-aos-duration="1000"></div>
+
+        <div class="sobre-historia">
+          <p>
+            O que me deixou conhecido nos lugares, tanto na escola, tanto na igreja, tanto no meu antigo emprego, foi simplesmente o fato de <strong>eu me garantir em edição de vídeos, fotos, etc.</strong> e ser experiente na área, mesmo eu, sendo jovem demais.
+          </p>
+          <p style="margin-bottom: -7px;">
+            A paixão pela arte de programar veio em 2021, mas desde criança que sou apaixonado por tudo relacionado a tecnologia e como tudo se encaixa.
+          </p>
+          <p>
+            Quero aprender mais e pôr em prática tudo que aprendi por amor a essa área, que mudou a minha vida.
+          </p>
+        </div>
+    </div>
+
+    <div class="tecnologias">
+      <h1>Minha Stack</h1>
+      <p>As tecnologias que eu uso e que estou aprendendo a utilizar são:</p>
+      <br>
+      <figure>
+        <img src="images/front e back.png" alt="tecnologias front e back" data-aos="zoom-in" data-aos-duration="500">
+        <figcaption>
+          HTML, CSS, JavaScript, PHP e MySQL
+          <br>
+          Tecnologias que utilizo para aplicações web
+        </figcaption>
+        <br>
+        <hr>
+        <img src="images/node.png" style="width: 300px; height: 180px;" alt="node" data-aos="zoom-in" data-aos-duration="500">
+        <figcaption>
+          Node JS
+          <br>
+          Ambiente de execução JavaScript server-side
+        </figcaption>
+        <br>
+        <hr>
+        <img src="images/react.png" style="width: 300px; height: 100px;" alt="react" data-aos="zoom-in" data-aos-duration="500">
+        <figcaption>
+          React
+          <br>
+          Biblioteca JavaScript
+        </figcaption>
+        <br>
+        <hr>
+      </figure>
+    </div>
+  </main>
+
+  <footer id="rodape">
+      © Cauan Victor - Todos os direitos reservados
+  </footer>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // You can also pass an optional settings object
+    // below listed default settings
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
+</body>
+
+</html>
